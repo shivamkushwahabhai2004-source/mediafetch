@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Simple authorized media utility">
+  <title>MediaFetch — Authorized Video Tool</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Media<span>Fetch</span></div>
+    <a href="#about">About</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">FAST • SIMPLE • MOBILE FRIENDLY</div>
+      <h1>Check your video URL</h1>
+      <p>Enter a media URL you own or have permission to download.</p>
+
+      <div class="card">
+        <form id="urlForm">
+          <label for="url">Video URL</label>
+          <div class="input-row">
+            <input id="url" name="url" type="url"
+                   placeholder="https://example.com/video.mp4" required>
+            <button type="submit">Check URL</button>
+          </div>
+        </form>
+        <div id="result" class="result hidden"></div>
+      </div>
+
+      <div class="ad-slot">ADVERTISEMENT</div>
+    </section>
+
+    <section id="about" class="info">
+      <h2>How it works</h2>
+      <div class="grid">
+        <article><b>1. Paste</b><p>Enter a valid HTTP/HTTPS media URL.</p></article>
+        <article><b>2. Check</b><p>The server validates the URL format.</p></article>
+        <article><b>3. Download</b><p>Connect your own authorized media storage/API here.</p></article>
+      </div>
+      <p class="notice">
+        This starter does not bypass YouTube restrictions or extract protected media.
+        Use it only with content you own or are authorized to download.
+      </p>
+    </section>
+
+    <section class="legal">
+      <h2>Privacy</h2>
+      <p>This starter does not store submitted URLs in a database. If you add analytics,
+         advertising, accounts, or logs, update your privacy notice accordingly.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 MediaFetch</footer>
+  <script src="/app.js"></script>
+</body>
+</html>
